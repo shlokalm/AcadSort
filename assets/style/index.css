@@ -329,7 +329,7 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 1;
 }
 
@@ -338,7 +338,7 @@ p {
   justify-content: space-between;
 }
 
-.company-footer-content .name {
+.name {
   font-weight: 800;
   color: #00c2ff;
 }
@@ -374,48 +374,62 @@ p {
 
 .card:hover {
   border: 1px solid #00c2ff;
-  box-shadow: 0 0 11px #f5fafe; 
+  box-shadow: 0 0 11px #f5fafe;
 }
 
 .contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   color: #f5fafe;
   font-weight: 400;
   cursor: pointer;
 }
 
-.whatsapp-chat a:nth-last-child(1) {
-  border-left: 1px solid #6c757d;
-  margin-left: 15px;
-  padding-left: 15px;
-}
-
-.whatsapp-chat {
-  display: flex;
-  align-items: center;
-}
-
 .wht-icon {
-  color: #00c2ff;
+  color: #f5fafe;
   font-size: 20px !important;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
-.contact h6 {
+.contact h6,
+.contact p {
   margin: 0;
 }
 
 .contact:hover {
   color: #00c2ff;
 }
-
-.contact:hover .wht-icon {
-  color: #00a3ff;
+.contact:hover p {
+  color: #f5fafe;
+  opacity: 1;
+  text-decoration: underline;
 }
 
-.company-footer-content a:hover {
+.container a:hover {
   text-decoration: none;
+}
+
+.container .form-control {
+  height: 40px;
+  line-height: 30px;
+  border-width: 0 0 2px 0;
+  font-size: 14px;
+}
+
+.container .form-control:focus {
+  border-color: #00c2ff;
+  box-shadow: none;
+}
+
+.container textarea.form-control {
+  height: auto;
+}
+
+.send-query {
+  background-color: #00a3ff;
+  padding: 5px 35px;
+  color: #f5fafe;
+  border-radius: 16px;
+  font-size: 16px;
 }
