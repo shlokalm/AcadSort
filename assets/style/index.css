@@ -262,7 +262,7 @@ p {
 }
 
 .section:nth-child(even) {
-  background: #F5FAFE;
+  background: #f5fafe;
 }
 
 .section.py-sm {
@@ -343,10 +343,28 @@ p {
   color: #00c2ff;
 }
 
-@media only screen and (max-width: 600px){
-.hidden {
-  display: none;
-}
+@media only screen and (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+  .company-footer-content {
+    flex-direction: column;
+  }
+  .company-footer-content .contact {
+    margin-top: 10px;
+  }
+  .company-footer-content .whatsapp-chat a:nth-last-child(1) {
+    border-left: none;
+    margin: auto 0;
+    padding: 0;
+  }
+  .company-footer-content .whatsapp-chat {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .company-footer-content .contact {
+    justify-content: flex-start;
+  }
 }
 
 .card {
@@ -356,4 +374,48 @@ p {
 
 .card:hover {
   border: 1px solid #00c2ff;
+  box-shadow: 0 0 11px #f5fafe; 
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #f5fafe;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.whatsapp-chat a:nth-last-child(1) {
+  border-left: 1px solid #6c757d;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.whatsapp-chat {
+  display: flex;
+  align-items: center;
+}
+
+.wht-icon {
+  color: #00c2ff;
+  font-size: 20px !important;
+  margin-right: 10px;
+}
+
+.contact h6 {
+  margin: 0;
+}
+
+.contact:hover {
+  color: #00c2ff;
+}
+
+.contact:hover .wht-icon {
+  color: #00a3ff;
+}
+
+.company-footer-content a:hover {
+  text-decoration: none;
 }
