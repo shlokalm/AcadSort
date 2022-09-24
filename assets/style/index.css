@@ -317,19 +317,28 @@ p {
   color: #fff;
 }
 
-.section.has-img-bg * {
+.section.has-footer-img-bg {
+  position: relative;
+  background: url(../media/header.jpg) no-repeat center top fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.section.has-img-bg *,
+.section.has-footer-img-bg * {
   position: relative;
   z-index: 100;
 }
 
-.section.has-img-bg:after {
+.section.has-img-bg:after,
+.section.has-footer-img-bg::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
 
@@ -432,4 +441,12 @@ p {
   color: #f5fafe;
   border-radius: 16px;
   font-size: 16px;
+}
+
+.methodology {
+  color: #00c2ff;
+}
+
+#methodology p {
+  opacity: 1;
 }
